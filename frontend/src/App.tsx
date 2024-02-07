@@ -1,14 +1,14 @@
 //import { useState } from 'react'
-import './App.css'
-import { PostsPage } from './components/posts_page/posts_page'
-
+import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from "./components/router/router"
 function App() {
   
 
   return (
-    <>
-      <PostsPage/>
-    </>
+    <BrowserRouter>
+      <Router/>
+    </BrowserRouter>
   )
 }
 
