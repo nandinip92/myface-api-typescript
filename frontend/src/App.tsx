@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import './App.css'
-import { Posts } from './components/posts/posts'
+import { Posts } from './components/posts/posts_new'
 
 function App() {
   

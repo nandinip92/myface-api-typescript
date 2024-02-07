@@ -1,32 +1,10 @@
 import { useEffect, useState } from "react";
-import moment from "moment";
-
-interface PostUserModel {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-}
-
-interface PostModel {
-    id: number;
-    message: string;
-    imageUrl: string;
-    createdAt: moment.Moment;
-    postedBy: PostUserModel;
-    likedBy: PostUserModel[];
-    dislikedBy: PostUserModel[];
-}
-
-interface ApiPosts{
-    results:Array<PostModel>
-}
-
+import { PostModel,ApiPosts } from "../../models/postsModel";
+import { PostCard } from "./post_card";
 
 export const Posts=()=>{
 
     const [allPosts, setAllPosts] = useState<Array<PostModel>|undefined>();
-
 
     useEffect(()=>{
 
@@ -43,36 +21,9 @@ export const Posts=()=>{
     }
 
 
-    return(<div>
+    return(<div className="all-posts-container">
         {allPosts.map((post,index)=>
-            <div key={index}>
-                 <img src={post.imageUrl} id="post_image" />
-                <ol>
-                    <li>
-                    <p className="card-text">{post.message}</p>
-                    </li>
-                    <li>
-                    <p className="card-text">
-                        <strong>CreatedAt:</strong> 
-                            {post.createdAt}
-                    </p>
-                    </li>
-                    <li>
-                    <strong>postedBy:</strong> {post.postedBy.username}
-                    </li>
-                    <li>
-                    <strong>likedBy:</strong>
-                        {post.likedBy.map((user)=>user.username).join(", ")}
-                    </li>
-                    <li>
-                    <strong>dislikedBy:</strong>
-                    {post.dislikedBy.map((user)=>user.username).join(", ")}
-                    </li>
-                </ol>
-                
-            </div>
-            
+            <PostCard key={index} post={post}/>
             )}
     </div>)
 }
-
