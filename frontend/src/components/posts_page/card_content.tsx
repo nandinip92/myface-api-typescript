@@ -17,9 +17,9 @@ export const CardContent: React.FC<CardContentProps> = ({
 }) => {
   return <ul className="card-content">
     <li><strong>message: </strong>{message}</li>
-        <li><strong>CreatedAt: </strong> {createdAt}</li>
-        <li><strong>postedBy: </strong> {postedBy}</li>
-        <li><strong>likedBy: </strong>{likedBy}</li>
-        <li><strong>dislikedBy: </strong>{dislikedBy}</li>
+        <li> <p className="card-text"><strong>CreatedAt: </strong> {createdAt}</p></li>
+        <li> <p className="card-text"><strong>postedBy: </strong> {postedBy}</p></li>
+        <li> <p className="card-text"><strong>likedBy: </strong>{likedBy}</p></li>
+        <li> <p className="card-text"><strong>dislikedBy: </strong>{dislikedBy}</p></li>
   </ul>;
 };
