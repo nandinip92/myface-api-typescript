@@ -1,13 +1,13 @@
 //import { useState } from 'react'
 import './App.css'
-import { Posts } from './components/posts/posts_new'
+import { PostsPage } from './components/posts_page/posts_page'
 
 function App() {
   
 
   return (
     <>
-      <Posts/>
+      <PostsPage/>
     </>
   )
 }

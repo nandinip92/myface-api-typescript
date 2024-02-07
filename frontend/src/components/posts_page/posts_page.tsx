@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { PostModel,ApiPosts } from "../../models/postsModel";
 import { PostCard } from "./post_card";
 
-export const Posts=()=>{
+export const PostsPage=()=>{
 
     const [allPosts, setAllPosts] = useState<Array<PostModel>|undefined>();
 
