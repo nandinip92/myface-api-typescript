@@ -22,7 +22,7 @@ export const CreateNewUser = () => {
     coverImageUrl: undefined,
     profileImageUrl: undefined,
   });
-  const [errors, setErrors] = useState<Array<string>>();
+  const [errors, setErrors] = useState<Array<string>|undefined>();
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
     const { name, value } = event.target;
