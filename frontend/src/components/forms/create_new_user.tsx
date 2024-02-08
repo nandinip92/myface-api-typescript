@@ -1,8 +1,18 @@
+/*
+ * The following Single component `CreateNewUser` have been used for complete form
+ * The following code has been splitted into two seperate components later.
+ * `new_user_form.tsx` and `text_input.tsx`
+ *
+ *  I have not deleted this file just use as a backup and for my future reference only
+ *
+ */
+
 import { ChangeEventHandler, FormEventHandler, useState } from "react";
 import { validateField } from "./validate_field";
 import { ErrorMessage } from "./error_messages";
 import "./create_new_user_styles.css";
 import { NewUserModel } from "../../models/usersModel";
+
 
 export const CreateNewUser = () => {
   const [inputs, setInputs] = useState<NewUserModel>({
