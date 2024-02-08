@@ -10,8 +10,8 @@
 import { ChangeEventHandler, FormEventHandler, useState } from "react";
 import { validateField } from "./validate_field";
 import { ErrorMessage } from "./error_messages";
-import "./create_new_user_styles.css";
 import { NewUserModel } from "../../models/usersModel";
+import "./form_styles.css.css";
 
 
 export const CreateNewUser = () => {
