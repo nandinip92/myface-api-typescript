@@ -16,7 +16,3 @@ export interface PostModel {
     likedBy: PostUserModel[];
     dislikedBy: PostUserModel[];
 }
-
-export interface ApiPosts{
-    results:Array<PostModel>
-}

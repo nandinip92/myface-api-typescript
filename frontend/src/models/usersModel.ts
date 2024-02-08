@@ -18,7 +18,3 @@ export interface UserModel {
     likes: UserPostModel[];
     dislikes: UserPostModel[];
 }
-
-export interface ApiUsers{
-    results:Array<UserModel>
-}
