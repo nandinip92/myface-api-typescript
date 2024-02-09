@@ -38,50 +38,52 @@ export const NewUserForm = () => {
 
   return (
     <div className="form-container">
+      <div className="form-border">
         <h2>New User Form</h2>
-      <form className="new-user-form" onSubmit={handleSubmit}>
-        <label>
-          <span>Enter your Name:</span>
-          <TextInput
-            fieldName="name"
-            fieldValue={inputs.name || ""}
-            onChangeSetInputs={setInputs}
-          />
-        </label>
-        <label>
-          <span>Enter your Username:</span>
-          <TextInput
-            fieldName="username"
-            fieldValue={inputs.username || ""}
-            onChangeSetInputs={setInputs}
-          />
-        </label>
-        <label>
-          <span>Enter your Email:</span>
-          <TextInput
-            fieldName="email"
-            fieldValue={inputs.email || ""}
-            onChangeSetInputs={setInputs}
-          />
-        </label>
-        <label>
-          <span>Enter your CoverImageUrl:</span>
-          <TextInput
-            fieldName="coverImageUrl"
-            fieldValue={inputs.coverImageUrl || ""}
-            onChangeSetInputs={setInputs}
-          />
-        </label>
-        <label>
-          <span>Enter your ProfileImageUrl:</span>
-          <TextInput
-            fieldName="profileImageUrl"
-            fieldValue={inputs.profileImageUrl || ""}
-            onChangeSetInputs={setInputs}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+        <form className="new-user-form" onSubmit={handleSubmit}>
+          <label>
+            <span>Enter your Name:</span>
+            <TextInput
+              fieldName="name"
+              fieldValue={inputs.name || ""}
+              onChangeSetInputs={setInputs}
+            />
+          </label>
+          <label>
+            <span>Enter your Username:</span>
+            <TextInput
+              fieldName="username"
+              fieldValue={inputs.username || ""}
+              onChangeSetInputs={setInputs}
+            />
+          </label>
+          <label>
+            <span>Enter your Email:</span>
+            <TextInput
+              fieldName="email"
+              fieldValue={inputs.email || ""}
+              onChangeSetInputs={setInputs}
+            />
+          </label>
+          <label>
+            <span>Enter your CoverImageUrl:</span>
+            <TextInput
+              fieldName="coverImageUrl"
+              fieldValue={inputs.coverImageUrl || ""}
+              onChangeSetInputs={setInputs}
+            />
+          </label>
+          <label>
+            <span>Enter your ProfileImageUrl:</span>
+            <TextInput
+              fieldName="profileImageUrl"
+              fieldValue={inputs.profileImageUrl || ""}
+              onChangeSetInputs={setInputs}
+            />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };

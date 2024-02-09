@@ -24,18 +24,18 @@ const validateNameField = (fieldValue: string) => {
 };
 
 /*
- * UserNAME field can contain letters, numbers and special characters like _. No other special charecters are allowed
+ * UserNAME field can contain only Lower Case letters, numbers and special characters like _. No other special charecters are allowed
  * and the field should not be empty and minimun length should be 5 characters
  */
 const validateUsernameField = (fieldValue: string) => {
   const error: Array<string> = [];
   let length = 0;
-  const isValidUsername = /([A-Za-z0-9])\w+/g.test(fieldValue);
+  const isValidUsername = /([a-z0-9])\w+/g.test(fieldValue);
 
   isValidUsername
     ? (length = fieldValue.length)
     : error.push(
-        "Username shouls only contain alphabets and numbers and underscores"
+        "Username shouls only contain lowercase alphabets and numbers and underscores"
       );
 
   if (!(length > 5) && isValidUsername) {
