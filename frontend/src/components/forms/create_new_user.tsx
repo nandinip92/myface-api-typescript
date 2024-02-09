@@ -59,7 +59,7 @@ export const CreateNewUser = () => {
   return (
     <form className="new-user-form" onSubmit={handleSubmit}>
       <label>
-        Enter your Name:
+        <span>Enter your Name:</span>
         <input
           type="text"
           name="name"
@@ -68,7 +68,7 @@ export const CreateNewUser = () => {
         />
       </label>
       <label>
-        Enter your username:
+      <span>Enter your username:</span>
         <input
           type="text"
           name="username"
@@ -78,7 +78,7 @@ export const CreateNewUser = () => {
       </label>
 
       <label>
-        Enter your Email:
+      <span>Enter your Email:</span>
         <input
           type="text"
           name="email"
@@ -88,7 +88,7 @@ export const CreateNewUser = () => {
       </label>
 
       <label>
-        Enter your coverImageUrl:
+      <span>Enter your coverImageUrl:</span>
         <input
           type="text"
           name="coverImageUrl"
@@ -98,7 +98,7 @@ export const CreateNewUser = () => {
       </label>
 
       <label>
-        Enter your profileImageUrl:
+      <span>Enter your profileImageUrl:</span>
         <input
           type="text"
           name="profileImageUrl"
