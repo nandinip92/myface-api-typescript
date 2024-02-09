@@ -1,7 +1,37 @@
-.new-user-form{
+.form{
+  border:0.2rem solid grey;
+  border-radius: 2%;
   display:flex;
   flex-direction: column;
+  width:100%;
+  padding: 0 60px;
+  margin-left: 20%;
 }
+.form h2{
+  text-align: center;
+  color:yellowgreen
+}
+.new-user-form{
+  /* border:0.5rem solid orange; */
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width:100%;
+  /* margin:0px auto; */
+}
+label{
+  /* border:0.2rem solid yellow; */
+  display:inline-block;
+  margin:20px;
+  padding:20px;
+}
+label span{
+  display:inline-block;
+  text-align: left;
+  width: 200px;
+  font-family: cursive;
+}
+
 .error {
     color: red;
   }
