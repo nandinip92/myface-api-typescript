@@ -28,7 +28,6 @@ export const UsersPage = () => {
     <div className="users-page">
         <h1>Users</h1>
         <ul className="users-container">
-            {/* {allUsers.map(user => <p>{user.name}-{user.id}</p>) } */}
             {allUsers.map(user=>(
                 <li key={user.id}>
                     <Link to={user.id.toString()}>{user.name}</Link>
