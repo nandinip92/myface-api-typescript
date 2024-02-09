@@ -1,5 +1,5 @@
 /*
- * The following Single component `CreateNewUser` have been used for complete form
+ * The following Single component `CreateNewUser` had been used for complete form
  * The following code has been splitted into two seperate components later.
  * `new_user_form.tsx` and `text_input.tsx`
  *
