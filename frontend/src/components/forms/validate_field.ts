@@ -1,6 +1,4 @@
 export const validateField = (fieldName: string, fieldValue: string) => {
-  console.log("---->", fieldName);
-
   if (fieldName === "name") return validateNameField(fieldValue);
   if (fieldName === "username") return validateUsernameField(fieldValue);
 };
@@ -30,12 +28,12 @@ const validateNameField = (fieldValue: string) => {
 const validateUsernameField = (fieldValue: string) => {
   const error: Array<string> = [];
   let length = 0;
-  const isValidUsername = /([a-z0-9])\w+/g.test(fieldValue);
+  const isValidUsername = /^[a-z0-9_]+$/g.test(fieldValue);
 
   isValidUsername
     ? (length = fieldValue.length)
     : error.push(
-        "Username shouls only contain lowercase alphabets and numbers and underscores"
+        "Username should only contain lowercase alphabets and numbers and underscores"
       );
 
   if (!(length > 5) && isValidUsername) {
