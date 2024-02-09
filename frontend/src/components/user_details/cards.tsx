@@ -8,8 +8,8 @@ interface CardsProps {
 export const Cards: React.FC<CardsProps> = ({ username, postCards }) => {
   return (
     <ul className="cards-container">
-      {postCards.map((card) => (
-        <li className="cards-item">
+      {postCards.map((card,index) => (
+        <li id={index.toString()} className="cards-item">
           <div className="card">
             <img src={card.imageUrl} />
             <div className="card-content">
