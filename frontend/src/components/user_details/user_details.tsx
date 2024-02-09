@@ -27,9 +27,3 @@ export const UserDetails = () => {
     </div>
   );
 };
-
-    // <div>
-    //   <h1>Hey User!--- {id}</h1>
-    //   <p>{currentUser.name}</p>
-    //   <p>{currentUser.email}</p>
-    // </div>
