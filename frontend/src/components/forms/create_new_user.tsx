@@ -13,7 +13,6 @@ import { ErrorMessage } from "./error_messages";
 import { NewUserModel } from "../../models/usersModel";
 import "./form_styles.css";
 
-
 export const CreateNewUser = () => {
   const [inputs, setInputs] = useState<NewUserModel>({
     name: undefined,
@@ -22,7 +21,7 @@ export const CreateNewUser = () => {
     coverImageUrl: undefined,
     profileImageUrl: undefined,
   });
-  const [errors, setErrors] = useState<Array<string>|undefined>();
+  const [errors, setErrors] = useState<Array<string> | undefined>();
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
     const { name, value } = event.target;
@@ -68,7 +67,7 @@ export const CreateNewUser = () => {
         />
       </label>
       <label>
-      <span>Enter your username:</span>
+        <span>Enter your username:</span>
         <input
           type="text"
           name="username"
@@ -76,9 +75,8 @@ export const CreateNewUser = () => {
           onChange={handleChange}
         />
       </label>
-
       <label>
-      <span>Enter your Email:</span>
+        <span>Enter your Email:</span>
         <input
           type="text"
           name="email"
@@ -88,7 +86,7 @@ export const CreateNewUser = () => {
       </label>
 
       <label>
-      <span>Enter your coverImageUrl:</span>
+        <span>Enter your coverImageUrl:</span>
         <input
           type="text"
           name="coverImageUrl"
@@ -98,7 +96,7 @@ export const CreateNewUser = () => {
       </label>
 
       <label>
-      <span>Enter your profileImageUrl:</span>
+        <span>Enter your profileImageUrl:</span>
         <input
           type="text"
           name="profileImageUrl"
