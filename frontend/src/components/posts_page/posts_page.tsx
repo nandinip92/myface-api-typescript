@@ -19,7 +19,6 @@ export const PostsPage = () => {
       setAllPosts(data.results);
    
     };
-    //console.log("--->", allPosts);
     apiData();
   }, [searchParams]);
 

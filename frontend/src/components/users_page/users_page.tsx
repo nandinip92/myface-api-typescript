@@ -17,7 +17,6 @@ export const UsersPage = () => {
       setUsersPageData(data);
       setAllUsers(data.results);
     };
-    console.log("--->", allUsers);
     apiData();
   }, [searchParams]);
 
