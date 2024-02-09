@@ -5,12 +5,12 @@
   text-align: center; */
 }
 
-/* .cards-item {
+.cards-item {
   border: 0.3rem solid red;
   display: flex;
   flex-wrap: wrap;
-  /* padding: 1rem; 
-  /* width: 50%; 
+  /* padding: 1rem; */
+  /* width: 50%; */
   @media (max-width: 429px) {
     width: 20%;
   }
@@ -26,13 +26,13 @@
 }
 
 .card {
-  /* border: 0.2rem solid orange; 
+  /* border: 0.2rem solid orange; */
   background-color: #151820;
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .card img {
   background-position: center center;
