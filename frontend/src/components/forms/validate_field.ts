@@ -30,7 +30,7 @@ const validateNameField = (fieldValue: string) => {
 const validateUsernameField = (fieldValue: string) => {
   const error: Array<string> = [];
   let length = 0;
-  const isValidUsername = /([A-Z0-9])\w+/g.test(fieldValue);
+  const isValidUsername = /([A-Za-z0-9])\w+/g.test(fieldValue);
 
   isValidUsername
     ? (length = fieldValue.length)
