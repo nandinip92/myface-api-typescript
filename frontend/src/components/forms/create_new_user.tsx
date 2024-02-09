@@ -11,7 +11,7 @@ import { ChangeEventHandler, FormEventHandler, useState } from "react";
 import { validateField } from "./validate_field";
 import { ErrorMessage } from "./error_messages";
 import { NewUserModel } from "../../models/usersModel";
-import "./form_styles.css.css";
+import "./form_styles.css";
 
 
 export const CreateNewUser = () => {

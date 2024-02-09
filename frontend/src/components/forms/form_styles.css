@@ -1,13 +1,17 @@
-.form{
-  border:0.2rem solid grey;
+.form-container{
+  /* border:0.2rem solid grey; */
   border-radius: 2%;
   display:flex;
   flex-direction: column;
-  width:100%;
-  padding: 0 60px;
-  margin-left: 20%;
+  justify-content: center;  /*vertical alignment */
+  align-items: center;      /* horizontal alignment */
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
-.form h2{
+.form-container h2{
   text-align: center;
   color:yellowgreen
 }
@@ -17,7 +21,6 @@
   flex-direction: column;
   text-align: center;
   width:100%;
-  /* margin:0px auto; */
 }
 label{
   /* border:0.2rem solid yellow; */
