@@ -1,0 +1,113 @@
+@import "../common_styles/constants.scss";
+
+.myFaceHeader {
+  border: 0.2rem solid yellowgreen;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+.app-name {
+  @include text("heading");
+  @include padding(1);
+}
+
+.navbar {
+  border: 0.2rem solid orange;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 10;
+  background-color: #151820;
+  padding: 1.25rem 1.5rem;
+}
+.navbar.active {
+  right: 0;
+}
+
+.nav-content {
+  border: 0.2rem solid hotpink;
+  @include padding(10);
+  @include margin(0);
+}
+
+.nav-item {
+  margin: 2.5rem 2rem;
+}
+.hamburger {
+  border:0.2rem solid yellow;
+  display: block;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #dcdcdc;
+}
+
+//hamburger icon to close icon
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-link {
+  @include text("heading");
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #2985ff;
+}
+
+@include desktop {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    left: 0;
+    right: 0;
+    bottom: auto;
+    @include padding(2);
+  }
+  .nav-content {
+    border: 0.2rem solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include padding(0);
+  }
+
+  .nav-menu {
+    border: 0.2rem solid lightpink;
+    position: static;
+    text-align: center;
+    display: flex;
+    color: white;
+    @include padding(1);
+    @include margin(0);
+  }
+  .nav-item {
+    margin: 0 0 0 2.5rem;
+  }
+}
