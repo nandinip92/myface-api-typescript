@@ -1,0 +1,44 @@
+@import "../common_styles/constants.scss";
+
+.buttons-container {
+  display: flex;
+  position:relative;
+  bottom: 5px;
+  left: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.button {
+  background-color: goldenrod;
+}
+#like {
+  background-color: blue;
+}
+#dislike {
+  background-color: red;
+}
+
+.all-posts-container {
+  // border: 0.2rem solid orange;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  //@include padding(1);
+}
+
+// .cards-item {
+//   // border: 0.2rem solid red;
+//   // flex-wrap: wrap;
+//   width:30%;
+//   height:40%;
+
+// }
+// .card {
+//   // border: 0.2rem solid yellow;
+//   background-color:#151820;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: stretch;
+//   width:100%;// calc(50% - 0.75rem);
+//   height:100%;
+// }

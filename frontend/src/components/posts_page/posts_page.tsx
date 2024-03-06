@@ -4,7 +4,7 @@ import { Page } from "../../models/page";
 import { PostCard } from "./post_card";
 import { useSearchParams } from "react-router-dom";
 import { Pagination } from "../pagination/pagination";
-import "./posts_page_styles.css";
+import "./posts_page_styles.scss";
 
 export const PostsPage = () => {
   const [postsData, setPostsData] = useState<Page<PostModel>>();

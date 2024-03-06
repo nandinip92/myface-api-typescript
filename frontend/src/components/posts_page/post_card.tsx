@@ -16,7 +16,7 @@ export const PostCard: React.FC<PostCardProps> = (props) => {
   const postedBy = post.postedBy.username;
   const likedBy = post.likedBy.map((user) => user.username).join(", ");
   const dislikedBy = post.dislikedBy.map((user) => user.username).join(", ");
-  
+
   return (
     <div className="cards-item">
       <div className="card">
