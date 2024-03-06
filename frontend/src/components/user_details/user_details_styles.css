@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   /* height: 5%; */
-  /* width: 100%; */
+  width: 100%;
   display: grid;
 }
 
@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
-  /* position: relative; */
   transform: translateY(-50%);
   margin-left: 5%;
   background-color: rgba(37, 42, 36, 0.7);
@@ -25,12 +24,13 @@
 }
 
 .cards-container {
-  border: 0.2rem solid yellowgreen;
+  /* border: 0.2rem solid yellowgreen; */
   display: flex;
   overflow-x: auto;
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 100vw;
   @media (min-width: 200px) {
     gap: 16px;
   }
