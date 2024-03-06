@@ -1,0 +1,42 @@
+@import "@fontsource/titillium-web";
+
+$desktopMinWidth: 992px;
+$tabletMaxWidth: 900px;
+
+@mixin padding($size: 1) {
+  padding: calc($size * 4px);
+}
+
+@mixin margin($size: 1) {
+  margin: calc($size * 4px);
+}
+
+@mixin text($textSize) {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: map-get(
+    (
+      paragraph: 14px,
+      heading: 24px,
+      subheading: 20px,
+      title: 48px,
+    ),
+    $textSize
+  );
+}
+
+@mixin text-stylised() {
+  font-family: "Titillium Web", sans-serif;
+}
+
+@mixin tablet {
+  @media (max-width: $tabletMaxWidth) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktopMinWidth) {
+    @content;
+  }
+}
