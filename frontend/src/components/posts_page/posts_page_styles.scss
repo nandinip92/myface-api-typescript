@@ -2,9 +2,9 @@
 
 .buttons-container {
   display: flex;
-  position:relative;
-  bottom: 5px;
-  left: 10px;
+  // position:relative;
+  // bottom: 5px;
+  // left: 10px;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -17,6 +17,7 @@
 #dislike {
   background-color: red;
 }
+
 
 .all-posts-container {
   // border: 0.2rem solid orange;

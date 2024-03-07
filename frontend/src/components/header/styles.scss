@@ -1,8 +1,8 @@
 @import "../common_styles/constants.scss";
 
 .myFaceHeader {
-  border: 0.2rem solid yellowgreen;
-  position: fixed;
+  // border: 0.2rem solid yellowgreen;
+  // position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@ li {
 }
 
 .navbar {
-  border: 0.2rem solid orange;
+  // border: 0.2rem solid orange;
   position: fixed;
   right: 0;
   top: 0;
@@ -36,7 +36,7 @@ li {
 }
 
 .nav-content {
-  border: 0.2rem solid hotpink;
+  // border: 0.2rem solid hotpink;
   @include padding(10);
   @include margin(0);
 }
@@ -45,8 +45,14 @@ li {
   margin: 2.5rem 2rem;
 }
 .hamburger {
-  border:0.2rem solid yellow;
-  display: block;
+  // border: 0.2rem solid yellow;
+  // display:block;
+  display:inline-block;
+  position: relative;
+  z-index:15;
+  top:15px;
+  left: 100%;
+  transform: translateX(-200%);
   cursor: pointer;
 }
 .bar {
@@ -90,7 +96,7 @@ li {
     @include padding(2);
   }
   .nav-content {
-    border: 0.2rem solid red;
+    // border: 0.2rem solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +105,7 @@ li {
   }
 
   .nav-menu {
-    border: 0.2rem solid lightpink;
+    // border: 0.2rem solid lightpink;
     position: static;
     text-align: center;
     display: flex;
