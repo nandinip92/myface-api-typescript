@@ -29,7 +29,7 @@ export const PostsPage = () => {
   }
 
   return (
-    <div>
+    <div className="posts-page">
       <h1>Posts</h1>
       <div className="all-posts-container">
         {allPosts.map((post, index) => (
