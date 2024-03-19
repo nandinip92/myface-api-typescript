@@ -10,7 +10,7 @@ export const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        {/* <Route index element={<PostsPage />} /> */}
+        <Route index element={<PostsPage />} />
         <Route path="/posts" element={<PostsPage />} />
         <Route path="/users" element={<UsersPage />} />
         <Route path="/users/:id" element={<UserDetails />} />
